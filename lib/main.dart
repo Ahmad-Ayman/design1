@@ -1,6 +1,7 @@
+import 'package:design1/screens/hommm.dart';
+import 'package:design1/screens/login_page.dart';
 import 'package:flutter/material.dart';
 
-import 'home_screen.dart';
 import 'login_screen.dart';
 
 void main() {
@@ -20,8 +21,10 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       debugShowCheckedModeBanner: false,
       routes: {
-        '/': (context) => HomeScreen(),
+        '/': (context) => LoginScreen(),
         '/login': (context) => LoginScreen(),
+        '/LoginPage2': (context) => LoginPage(),
+        '/homee': (context) => Homee(),
       },
     );
   }
