@@ -4,6 +4,7 @@ import 'package:design1/screens/page_for_bottom_navigation.dart';
 import 'package:flutter/material.dart';
 
 import 'login_screen.dart';
+import 'screens/page_for_drawer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.grey,
       ),
-      initialRoute: '/navBar',
+      initialRoute: '/navDrawer',
       debugShowCheckedModeBanner: false,
       routes: {
         '/': (context) => LoginScreen(),
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
         '/LoginPage2': (context) => LoginPage(),
         '/homee': (context) => Homee(),
         '/navBar': (context) => PageForNav(),
+        '/navDrawer': (context) => PageForDrawer(),
       },
     );
   }
