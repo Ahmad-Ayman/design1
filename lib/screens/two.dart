@@ -10,8 +10,13 @@ class Two extends StatefulWidget {
 class _TwoState extends State<Two> {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text('Two'),
+    return Container(
+      width: double.infinity,
+      height: double.infinity,
+      color: Colors.redAccent,
+      child: Center(
+        child: Text('Two', style: TextStyle(color: Colors.white)),
+      ),
     );
   }
 }
